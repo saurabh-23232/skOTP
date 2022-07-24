@@ -43,7 +43,6 @@ int main()
     int n;
 	cout<<"Enter length :";
 	cin>>n;
-
 	OTPgenerator(n);
     return 0;
 }
