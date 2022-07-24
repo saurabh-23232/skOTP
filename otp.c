@@ -4,9 +4,8 @@
 #include<time.h>
 using namespace std;
 
-string OTPgenerator(int n) // Generating OTP 
+string OTPgenerator(int n) 
 {
-
 	string str = "0123456789";
     int len = str.length();
  	string otp;
@@ -22,14 +21,13 @@ string OTPgenerator(int n) // Generating OTP
     	cout<<otp[i];
 	}
     cout<<endl;
-    cout<<"OTP will expire in 5 seconds....."<<endl;
-    sleep(5);
-	cout<<"Oops OTP is expired !!\n\n";
+    cout<<"OTP will expire in 10 seconds....."<<endl;
+    sleep(10);
+	cout<<"Your OTP is expired !!\n\n";
     int choice;
 	cout<<"press 1 for new OTP generation"<<endl;
 	cout<<"press 2 for exit \n\n";
 	cin>>choice;
-	
 	switch(choice)
 	{
 		case 1: system("CLS");
@@ -40,9 +38,8 @@ string OTPgenerator(int n) // Generating OTP
 		        break;
 	}
 }
-int main() //main function 
+int main() 
 {
-	
     int n;
 	cout<<"Enter length :";
 	cin>>n;
